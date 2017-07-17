@@ -1,0 +1,5 @@
+---
+applications:
+- name: ProductAppList
+  random-route: true
+  memory: 512M

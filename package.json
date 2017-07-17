@@ -1,0 +1,16 @@
+{
+  "name": "ProductListApp",
+  "version": "1.0.0",
+  "description": "Intro to bluemix platform",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "author": "Pratham",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "nodemon": "^1.11.0"
+  }
+}

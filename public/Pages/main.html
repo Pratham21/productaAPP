@@ -1,0 +1,32 @@
+<table class="table">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Product Category</th>
+                <th>Brand</th>
+                <th>Action</th>
+                <th>&nbsp;</th>
+            </tr>
+        </thead>
+        <tbody>
+           <tr>
+<!--
+               <td><input class="form-control" ng-model="product.name"></td>
+               <td><input class="form-control" ng-model="product.category"></td>
+               <td><input class="form-control" ng-model="product.brand"></td>
+               <td><button class="btn btn-primary" ng-click="addProduct()">Add Product</button></td>
+               <td><button class= "btn btn-info" ng-click= "update()">Update</button>&nbsp;&nbsp;<button class="btn btn-info" 
+               ng-click ="deselect()">Clear</button></td>
+-->
+
+
+           </tr>
+            <tr ng-repeat="product in productlist">
+                <td>{{product.name}}</td>
+                <td>{{product.category}}</td>
+                <td>{{product.brand}}</td>
+                <td><button class="btn btn-danger" ng-click="remove(product._id)"> Remove</button></td>
+                <td><button class="btn btn-warning" ng-click ="edit(product._id)">Edit</button></td>
+            </tr>
+        </tbody>
+    </table>
